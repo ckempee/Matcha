@@ -1,8 +1,7 @@
 <?php
 session_start();
 
-$user_id=$_SESSION['user_id'];
- require('./src/connexion.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -26,14 +25,15 @@ $user_id=$_SESSION['user_id'];
     h2{
         font-weight: bolder;
         text-decoration: underline;
+        font-weight: 800;
     }
 
     .explications{
         width: 100%;
         height: max-content;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 0.9rem;
+        font-weight: 500;
+        font-size: 1.2rem;
     }
 
     .presentation{
@@ -46,13 +46,14 @@ $user_id=$_SESSION['user_id'];
 
     .presentationImg{
         width: 50%;
-        height: 600px;
-        margin-top: 25px;
+        height: 800px;
+        padding-right: 25px;
+        margin-top: 50px;
     }
 
     .presentationImg img{
         
-        height: 550px;
+        height: 800px;
     }
 
     .presentationText{
@@ -63,8 +64,8 @@ $user_id=$_SESSION['user_id'];
 
     .bienfaits{
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 0.9rem;
+        font-weight: 500;
+        font-size: 1.2rem;
     }
 
     .mineraux{

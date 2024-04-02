@@ -67,6 +67,12 @@ if(!empty($_POST['email']) && !empty($_POST['mdp'])){
     <title>Document</title>
 </head>
 <body>
+
+<style>
+    input{
+        width: 100%;
+    }
+</style>
     <?php
     include("./header.php")
     ?>
