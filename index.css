@@ -1,0 +1,393 @@
+html, body{
+    margin:0;
+    height: max-content;
+    overflow-x: hidden;
+}
+
+#firstPage{
+    width: 100%;
+    height: 750px;
+    background-image: url(./images/16e0e59d9a58b1231538becea4e4d697.jpg);
+    background-size: cover;
+    
+}
+
+
+header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+   padding-top: 30px;
+   padding-left: 10px;
+   color:black;
+   z-index: 1000;
+   top:0;
+   background-color: transparent;
+   position: fixed;
+ 
+}
+
+
+
+
+#logo{
+    
+    width: 30%;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;;
+    margin-top: 10px;
+}
+
+
+.nav {
+    width: 100%;
+    height: max-content;
+    font-size: 18px;
+    position:static;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 0px;
+    
+  }
+
+ 
+
+  
+
+  #firstPage:before{
+    content: 'Nous livrons partout en Europe. Livraison gratuite à partir de 65 achats';
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(24, 82, 58);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    /* Ajoutez d'autres styles si nécessaire */
+  }
+
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+
+  .nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: rgba(24, 82, 58);
+  }
+
+  .sous-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 0.7em;
+    background-color: #fff; /* Couleur de fond pour les sous-menus */
+  }
+
+  .menu-deroulant:hover .sous-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-width: max-content;
+    width: auto;
+  }
+  
+  .menu-deroulant > a:after {
+    content: '';
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform-origin: center;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .sous-menu li {
+    display: block;
+    
+  }
+
+  .sous-menu li:hover{
+    text-decoration: underline;
+  }
+
+  /*haeder change*/
+
+  .header-color-change .nav a{
+    color: white; /* Couleur de texte modifiée lorsque le header change de couleur */
+  }
+
+  .header-color-change .menu-deroulant ul li a {
+    color: rgba(24, 82, 58);
+  }
+
+  .header-color-change {
+    background-color: rgba(24, 82, 58);
+    margin: 0;
+    color: white;
+    padding: 0;
+    height: 50px;
+    padding: 10px;
+  }
+  
+  
+  .header-color-change a{
+    color: white;
+  }
+
+  .header-color-change .achat{
+    color: white;
+    padding-right: 10px;
+  }
+
+
+.achat{
+    width: 25%;
+    display: flex;
+   justify-content:flex-end ;
+   margin-top: 12px;
+}
+
+.achat img{
+    width: 18px;
+    height: 18px;
+    margin-right:20px;
+}
+
+
+
+.textFirstPage{
+    text-align: center;
+    color: rgba(24, 82, 58);
+    padding-top: 100px;
+   
+    margin:auto;
+    
+    width: 80%;
+}
+
+h6{
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 4em;
+    text-transform: uppercase;
+    margin:0;
+    margin-bottom: 40px;
+    
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    border: 2px solid rgba(24, 82, 58);
+    font-size: 1em;
+    padding: 10px;
+}
+
+button:hover{
+    
+        
+        background-color: rgba(24, 82, 58);
+        color: white;
+        cursor: pointer;
+    
+}
+
+
+/*section 2*/
+
+#infos{
+width: 100%;
+height: 180px;
+background-color: white;
+text-align: center;
+padding-top: 25px;
+display: flex;
+justify-content:space-evenly ;
+flex-wrap: wrap;
+box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.3);}
+
+
+/*section  discovery*/
+#discoveryPack{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.imageDiscovery{
+  width: 45%;
+  height: max-content;
+}
+
+.textDiscovery{
+  width: 45%;
+  height: max-content;
+  color: rgba(24, 82, 58);
+  text-align: center;
+  padding:30px;
+  padding-top: 50px;
+}
+
+.textDiscovery h2{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.textDiscovery h6{
+  text-transform: uppercase;
+  margin:0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.textDiscovery h3{
+  padding:50px;
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+.textDiscovery a button{
+  text-transform: uppercase;
+  font-weight: 500;
+  
+}
+
+
+
+
+
+
+
+
+/*section  discovery*/
+#shop{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:20px;
+   
+}
+
+.shopCards{
+  width: 18%;
+  height: 450px;
+  border:1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow:0px 10px 10px -10px rgba(0, 0, 0, 0.3) ;
+}
+
+.shopText{
+  padding-left: 20px;
+}
+
+.shopText h3{
+  margin-bottom: 5px;
+}
+.shopText h4{
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+
+/*footer*/
+#footer{
+  width: 100%;
+  height: 250px;
+  background-color: rgba(24, 82, 58);
+  color: white;
+  display: flex;
+  
+  padding: 20px;
+}
+
+.newsletter{
+  width: 50%;
+}
+
+.newsletter input{
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  font-size: 1em;
+  font-style: italic;
+  text-transform: uppercase;
+  border: none;
+  margin-right: 20px;
+
+}
+
+.newsletter button{
+  border:1px solid white;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  
+}
+.newsletter button:hover{
+  border:1px solid white;
+  
+}
+
+.reseau{
+  width:15%;
+}
+
+.mentions{
+  width:30%;
+  display: flex;
+}
+
+svg{
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.mentions div{
+  width: 45%;
+  padding: 15px;
+}
+
+

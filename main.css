@@ -1,0 +1,279 @@
+html, 
+body{
+margin:0;
+}
+
+
+.navbar::before{
+  
+        content: 'Nous livrons partout en Europe. Livraison gratuite à partir de 65 achats';
+        display: block;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(24, 82, 58);
+        color: white;
+        text-align: center;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding-top: 10px;
+       
+        /* Ajoutez d'autres styles si nécessaire */
+      }
+
+
+header{
+    display: flex;
+    background-color:white;
+    padding: 10px;
+    height: 40px;
+    justify-content: center;
+}
+
+.nav {
+    width: 100%;
+    height: max-content;
+    font-size: 18px;
+    position:static;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    justify-content:space-evenly;
+    
+    
+  }
+
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+
+  .nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0px 10px; 
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: rgba(24, 82, 58);
+  }
+
+  .sous-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 0.7em;
+    background-color: #fff; /* Couleur de fond pour les sous-menus */
+  }
+
+  .menu-deroulant:hover .sous-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-width: max-content;
+    width: auto;
+  }
+  
+  .menu-deroulant > a:after {
+    content: '';
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform-origin: center;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .sous-menu li {
+    display: block;
+    
+  }
+
+  .sous-menu li:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+  /*changer la couleur du header quand on descend*/
+
+  .header-color-change .nav a{
+    color: white; /* Couleur de texte modifiée lorsque le header change de couleur */
+  }
+
+  .header-color-change .menu-deroulant ul li a {
+    color: rgba(24, 82, 58);
+  }
+
+  .header-color-change {
+    background-color: rgba(24, 82, 58);
+    margin: 0;
+    color: white;
+    padding: 0;
+    height: 50px;
+    padding: 10px;
+  }
+  
+  
+  .header-color-change a{
+    color: white;
+  }
+
+  .header-color-change .achat{
+    color: white;
+    padding-right: 10px;
+  }
+
+
+.achat{
+    width: 25%;
+    display: flex;
+   justify-content:flex-end ;
+   margin-top: 12px;
+}
+
+.achat img{
+    width: 18px;
+    height: 18px;
+    margin-right:20px;
+}
+
+
+
+
+
+
+/*---------login et inscription*/
+#connexion{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(24, 82, 58);
+    padding-top:50px;
+   
+    
+    
+}
+#form{
+    margin: auto;
+    width: 70%;
+    height: 600px;
+    background-color: antiquewhite;
+    display: flex;
+    
+}
+
+#imgForm{
+    width: 40%;
+    height:600px;
+    background-image: url(./images/connexion.jpg);
+    background-size: cover;
+
+}
+
+#formText{
+    
+    width: 60%;
+    height: 600px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding-right: 50px;
+    
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+form{
+    padding:40px;
+    margin: auto;
+    text-align: left;
+    padding-right: 100px;
+    
+}
+
+form label{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.formContainer{
+  margin-bottom: 10px;
+   padding-right: 100px;
+   width: 20px;
+
+}
+input{
+    border: none;
+    height: 35px;
+    width: 80px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+button{
+    margin-top: 10px;
+    background: linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    position: center;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(81, 173, 249);
+}
+
+.message{
+    width: 100%;
+    height: 50px;
+}
+
+.error{
+    margin: auto;
+    width: 70%;
+    height: 30px;
+    background-color: red;
+}
+
+.success{
+    margin: auto;
+    width: 70%;
+    height: 30px;
+    background-color: green;
+}
+
+
